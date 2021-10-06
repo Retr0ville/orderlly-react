@@ -1,0 +1,250 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-color: #fa0000cb;
+  background: -webkit-linear-gradient(rgb(240, 139, 139),rgb(164, 161, 221),rgb(241, 242, 255) );
+}
+a.item-name {
+  text-decoration: none;
+}
+
+.main{
+  flex: 1;
+}
+
+header {
+  position: fixed;
+  /* height: 50px; */
+  width: 100%;
+  z-index: 10;
+  background: -webkit-linear-gradient(rgb(255, 255, 255),rgb(196, 182, 218), rgb(240, 139, 139));
+  /* background-color: rgba(98, 0, 255, 0.205) */
+}
+div.container {
+  padding-top: 60px;
+}
+h1.orderlly{
+  height:max-content ;
+  /* background: -webkit-radial-gradient(rgba(119, 0, 255, 0.685), rgba(255, 153, 0, 0)); */
+  background: -webkit-linear-gradient(rgba(46, 44, 44, 0.315),rgb(92, 47, 253), rgb(153, 0, 255));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: rgb(139, 73, 73);
+  position: absolute;
+  padding:0px;
+  top: 0px;
+  left: 20px;
+  font-size: 30px;
+  font-weight: 650;
+}
+
+.footer{
+  display: block;
+  background-color: rgba(140, 0, 255, 0.144);
+  border-top: .5px solid;
+}
+ #footer {
+   max-width: max-content;
+   height: fit-content;
+   margin: 0px auto;
+   font-size: 12px;
+ }
+
+ a.nav-link {
+    color: rgb(76, 0, 255);
+    transition: .3s;
+  }
+  
+  .footer-nav li.nav-item, .footer-nav a.nav-link  {
+    font-size: xx-small;
+    padding: 2px 2px;
+  }
+
+  .footer-nav a.nav-link:hover {
+    color: rgb(0, 17, 255);
+    /* box-shadow: 2px 1px  inset rgba(189, 142, 216, 0.623); */
+    text-shadow:  .5px .25px;
+    /* border-left: 2px solid rgba(255, 0, 0, 0.63);*/
+    border-top: 2px solid rgba(255, 0, 0, 0.63);
+  }
+
+  .header-nav a.nav-link:hover {
+    color: rgb(0, 17, 255);
+    /* box-shadow: 2px -1px  inset rgba(59, 25, 252, 0.623); */
+    text-shadow:  .5px .25px;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.63);
+   /* border-top: 2px solid rgba(255, 0, 0, 0.63); */
+  }
+
+  .header-nav{
+    height: max-content;
+    top: 10px;
+    box-shadow: 0px 2px #7e2ab62d;
+  }
+
+  .nav-item.hidden{
+    display: none;
+  }
+
+  .header-nav .fa.fa-star{
+    text-shadow: 1px 1.5px red;
+  }
+  a.nav-link{
+    transition: .5s;
+  }
+  a .fa + span.hidden{
+    position: relative;
+    left: 15px;
+    display: none;
+    transition: .5s;
+  }
+
+  a.nav-link:hover .fa + span.hidden{
+    display: inline-block; 
+  
+  }
+   
+  a span.hidden:hover{
+    left: 0px;
+  }
+  
+
+  a .fa:hover + span.hidden{
+    left: 0px;
+  }
+
+  div.card-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+  div.card-max-width {
+    max-width: 900px;
+    margin: 30px auto;
+  }
+
+  div.card-body.opacity {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301);
+  }
+  div.bg-secondary {
+    --bs-bg-opacity: .1;
+  }
+/* .card.text-featured {
+  color: rgb(218, 80, 80);
+  font-size: 44px;
+  
+} */
+
+div.bg-gray {
+  background-color: #9a8ca848;
+}
+
+.card-columns {
+  margin: 10px auto;
+  column-count: 3;
+}
+div.card.col {
+  border: 0px;
+  margin: 10px auto;
+  max-width: fit-content;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+div.card-body.item {
+  position: relative;
+  background-color: rgba(184, 129, 216, 0.247);
+  padding: 7px 5px 5px 3px;
+}
+
+div.row-cols-3>* {
+  flex: 0 0 auto;
+  width: 32%;
+}
+
+a .item-name, div .item-description, div .item-cost {
+  color: rgb(0, 0, 0);
+}
+
+h5.card-title.item-name {
+  text-decoration: none;
+}
+
+div .card-text.item-description {
+  margin-bottom: 25px;
+  font-size: 12px;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 35px;
+}
+
+div .card-title.item-name {
+  margin-bottom: 5px;
+  height: 32px;
+  overflow: hidden;
+  font-size: small;
+}
+
+div .card-text.item-cost {
+  height: min-content;
+  position: absolute;
+  bottom: 0px;
+}
+
+/* img.card-img-top.item{
+  /* height: 130px; */
+
+
+@media screen and (max-width: 360px){
+  .card-columns {
+    column-count: 1;
+  }
+  div.row-cols-3>* {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}

@@ -1,0 +1,217 @@
+
+.featured {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain; */
+  border-end-end-radius: 15px;
+  border-start-end-radius: 15px;
+  border-end-start-radius: 15px;
+  max-height: 500px;
+  
+  max-width: 1000px;
+  border-right: 4px solid #e70000bd;
+  /* box-shadow: 5px 5px 20px rgba(201, 201, 201, 0.281); */
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+/* .featured:before {
+  content: "";
+  position: absolute;
+  bottom: -39px;
+  left: -17px;
+  border-top: 100px solid #e70000bd;
+  border-left: 12px solid transparent;
+  border-right: 5px solid transparent;
+  transform: rotate(45deg);
+} */
+.featured:after {
+  content: "";
+  position: absolute;
+  top: -52px;
+  left: -17px;
+  border-top: 100px solid #e70000bd;
+  border-left: 12px solid transparent;
+  border-right: 5px solid transparent;
+  transform: rotate(135deg);
+}
+.featured img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.featured .details {
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.685);
+  width: 100%;
+  position: absolute;
+  text-align: justify;
+  padding: 0px 5px 10px 35px;
+  bottom: 0px;
+  left: 0px;
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.603), rgb(0, 0, 0) );
+}
+.featured .description {
+  font-weight: 800;
+  /* width: h00px; */
+  font-size: 19px;
+  letter-spacing: .8px;
+  color: #c4c4c4;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+.featured .title {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #9365ff;
+  margin: 0;
+}
+.featured .cost {
+  display: block;
+  font-size: 25px;
+  color: #00e00bb9;
+  font-style: italic;
+}
+.owl-theme .owl-controls .owl-page span {
+  border: 2px solid #2a3d7d;
+  background: #fff !important;
+  border-radius: 0 !important;
+  opacity: 1;
+}
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls .owl-page:hover span {
+  background: #29d18b !important;
+  border-color: #29d18b;
+}
+@media only screen and (max-width: 767px) {
+  .featured {
+    padding: 0px;
+    text-align: center;
+  }
+  .featured .title {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: .8px;
+
+  }
+  .featured .cost {
+    font-size: 20px;
+  }
+  .featured .description{
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .6px;
+    margin-bottom: 8px;
+  }
+  /* .featured .pic {
+    display: block;
+    position: static;
+    margin: 0 auto 15px;
+  } */
+}
+@media only screen and (max-width: 506px) {
+  .featured {
+    padding: 0px;
+    text-align: center;
+  }
+  .featured .title {
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: .8px;
+
+  }
+  .featured .cost {
+    font-size: 20px;
+  }
+  .featured .description{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .3px;
+    margin-bottom: 7px;
+  }
+  /* .featured .pic {
+    display: block;
+    position: static;
+    margin: 0 auto 15px;
+  } */
+}
+@media only screen and (max-width: 457px) {
+  .featured {
+    padding: 0px;
+    text-align: center;
+  }
+  .featured .details {
+    text-align: justify;
+    padding: 0px 5px 0px 35px;
+  }
+  .featured .title {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: .8px;
+    margin-bottom: 0px;
+
+  }
+  .featured .description{
+    line-height: normal;
+    text-align: left;
+    padding-right: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .6px;
+    margin-bottom: 0px;
+  }
+  /* .featured .pic {
+    display: block;
+    position: static;
+    margin: 0 auto 15px;
+  } */
+}
+@media only screen and (max-width: 380px) {
+  .featured {
+    padding: 0px;
+    text-align: center;
+  }
+  .featured .title {
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: .7px;
+  }
+  .featured .cost {
+    font-size: 17px;
+  }
+  .featured .description{
+    line-height: normal;
+    text-align: left;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .featured .title {
+    font-size: 12px;
+    letter-spacing: .6px;
+  }
+  .featured .cost {
+    font-size: 14px;
+  }
+  .featured .description{
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 310px) {
+  .featured .title {
+    font-size: 10px;
+    letter-spacing: .6px;
+  }
+  .featured .cost {
+    font-size: 12px;
+  }
+  .featured .description{
+    font-size: 10px;
+  }
+}
