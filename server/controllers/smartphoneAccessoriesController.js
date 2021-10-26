@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 const SmartphoneAccessory = require('../models/smartphoneAccessory')
 // post to pcAccessories
 

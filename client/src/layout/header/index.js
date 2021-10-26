@@ -31,7 +31,7 @@ const Header = () => {
         text= 'Login/Sign-up'
       />
       <NavItemIcon 
-        isHidden= {isLoggedIn ? false : true}
+        isHidden= {!isLoggedIn}
         href='#'
         faIcon='fa fa-user'
         text= 'Profile'

@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 const Smartphone = require('../models/smartphone')
 // post to smartphones
 

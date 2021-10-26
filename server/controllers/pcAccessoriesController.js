@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 const PcAccessory = require('../models/pcAccessory')
 // post to pcAccessories
 

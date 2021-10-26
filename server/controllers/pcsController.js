@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 const Pc = require('../models/pc')
 // post to pcs
 
