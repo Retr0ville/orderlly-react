@@ -41,7 +41,7 @@ const Content = (props) => {
 
     if (item.data) {
       return item.data.map(({ price }) => {
-        const { id, amount, quantity, grade, carrier, storageSize, createdAt } =
+        const { id, amount, quantity, grade, description, storageSize, createdAt } =
           price;
         //  price : {}
         return (
@@ -49,8 +49,10 @@ const Content = (props) => {
             <ItemCard
               itemImage={imgUrl || ""}
               grade={grade || ""}
+
+              //todo *  carrier to description
               quantity={quantity || ""}
-              carrier={carrier || ""}
+              description={description || ""}
               postedOn={createdAt ? createdAt.slice(0, 10) : ""}
               title={name || ""}
               storageSize={storageSize || ""}

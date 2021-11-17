@@ -10,24 +10,30 @@ const cookieParser = require('cookie-parser')
 
 // init
 const app = express()
-const dbUri = 'mongodb+srv://Rtrvl:Sesameex1@cluster0.zvqqc.mongodb.net/Orderlly?retryWrites=true&w=majority'
+const dbUri =
+  'mongodb://Rtrvl:Sesameex1@cluster0-shard-00-00.zvqqc.mongodb.net:27017,cluster0-shard-00-01.zvqqc.mongodb.net:27017,cluster0-shard-00-02.zvqqc.mongodb.net:27017/Orderlly?ssl=true&replicaSet=atlas-itdc3i-shard-0&authSource=admin&retryWrites=true&w=majority'
 
-app.listen(5100, (err) => {
-  if (err) return console.log(err)
-  console.log('listening on port 5100...')
-})
+// app.listen(5100, (err) => {
+//   if (err) return console.log(err)
+//   console.log('listening on port 5100...')
+// })
 
 // !connect after testing
-// mongoose.connect(dbUri).then((result) => {
-//   console.log('connected to MongodB')
-//   app.listen(3000, (err) => {
-//     if (err) return console.log(err)
-//     console.log('listening on port 3000...')
-//   })
-// }).catch((err) => { console.log(err) })
+mongoose
+  .connect(dbUri)
+  .then(() => {
+    console.log('connected to MongodB')
+    app.listen(3000, (err) => {
+      if (err) return console.log(err)
+      console.log('listening on port 3000...')
+    })
+  })
+  .catch((err) => {
+    console.log(err)
+  })
 
 // statics and middlewares
-app.use(express.static('public'))
+// app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(cookieParser())
 app.use(express.json())

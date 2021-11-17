@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 const mongoose = require('mongoose')
 
 const Schema = mongoose.Schema
@@ -10,6 +11,9 @@ const smartphoneAccessorySchema = new Schema(
     },
     img: {
       type: String
+    },
+    quantity: {
+      type: Number
     },
     // userId: {
     //   type: String,

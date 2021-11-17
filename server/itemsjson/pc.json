@@ -1,0 +1,46 @@
+[
+  {
+    "itemName": "MSI Stealth GS76",
+    "img": "https://i.ibb.co/9Hw85Fg/MSI-GS76-Stealth-11-UE-221-1.jpg",
+    "storageSize": "1TB HDD",
+    "ram" : "32GB",
+    "graphicsCard" : "Nvidia GeForce RTX 3070",
+    "quantity" : 87,
+    "description" : "The Stealth GS76 includes the new Core i9-11900H octa-core processor as standard rather a Core i7.",
+    "itemStatus" : "A1",
+    "cost" : 3499
+  },
+  {
+    "itemName": "Asus ROG Strix G15 Advantage Edition",
+    "img": "https://i.ibb.co/d09CPvy/Sa45-Eb-X6o8-CZiha-DWdc5-Rf.jpg",
+    "storageSize": "512GB HDD",
+    "ram" : "16GB",
+    "graphicsCard" : "AMD Ryzen 9 5900HX",
+    "quantity" : 43,
+    "description" : "Battery life is impressive at over 11 hours; also impressive is the 300Hz refresh rate for the display",
+    "itemStatus" : "B2",
+    "cost" : 1650
+  },
+  {
+    "itemName": "Lenovo Legion 5 Pro Gen 6",
+    "img": "https://i.ibb.co/5cZGw2T/Legion-5-Pro-0.jpg",
+    "storageSize": "256GB SSD",
+    "ram" : "8GB",
+    "graphicsCard" : "Nvidia GeForce RTX 3050",
+    "quantity" : 125,
+    "description" : "The Legion 5 Pro provides a lot of value, including a truly impressive display. Not only is the 16-inch screen slightly larger than the typical 15.6-inch one, but its 2,560x1,600 (WQXGA) resolution is also high",
+    "itemStatus" : "A1",
+    "cost" : 1100
+  },
+  {
+    "itemName": "Alienware m17 R4",
+    "img": "https://i.ibb.co/F7Tnvp4/lo6agv78rmj61.jpg",
+    "storageSize": "256GB SSD",
+    "ram" : "16GB",
+    "graphicsCard" : "Nvidia GeForce RTX 3060",
+    "quantity" : 87,
+    "description" : "m17 R4 features a stylish magnesium alloy chassis with innovative in-house cooling technology and even an optional mechanical keyboard",
+    "itemStatus" : "C3",
+    "cost" : 1950
+  }
+]

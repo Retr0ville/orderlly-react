@@ -1,0 +1,34 @@
+[
+  {
+    "itemName": "Razer Goliathus Extended Chroma Gaming Mouse Mat",
+    "img": "https://i.ibb.co/zx17MvH/51-Lq-ZGVji-L-AC-SL1500.jpg",
+    "quantity" : 141,
+    "description" : "This gives you far more room to negotiate with your mouse and offers a nicer feel than that of the cold, hard desk underneath your keyboard. There’s even enough space for a coaster if you’d like to put your coffee mug on top of it, too.",
+    "itemStatus" : "A1",
+    "cost" : 52.06
+  },
+  {
+    "itemName": "Razer Basilisk V3",
+    "img": "https://i.ibb.co/85hKmzq/61-JKq-Nxa-Zk-L-AC-SL1500.jpg",
+    "quantity" : 100,
+    "description" : "10+1 Programmable Buttons: Assign all your macros and secondary functions across 11 programmable buttons — including its acclaimed multi-function trigger — to execute essential actions like push-to-talk, ping, and more",
+    "itemStatus" : "A1",
+    "cost" : 69.99
+  },
+  {
+    "itemName": "Razer Cynosa Chroma Gaming Keyboard",
+    "img": "https://i.ibb.co/wRjyGcC/81-W5d-X-Vdj-L-AC-SL1500.jpg",
+    "quantity" : 471,
+    "description" : "Razer Chroma fully syncs with popular games, Razer hardware, Philips Hue, and gear from 30 plus partners; supports 16.8 million colors on individually backlit keys",
+    "itemStatus" : "B2",
+    "cost" : 39.99
+  },
+  {
+    "itemName": "Razer BlackShark V2 Gaming Headset",
+    "img": "https://i.ibb.co/TTZ4ymr/61wr-Oi-03-FL-AC-SL1500.jpg",
+    "quantity" : 101,
+    "description" : "THX 7.1 Spatial Surround Sound - 50mm Drivers - Detachable Mic - PC, PS4, PS5, Switch, Xbox One, Xbox Series X & S, Mobile - 3.5 mm Audio Jack & USB DAC - Black",
+    "itemStatus" : "A1",
+    "cost" : 99.45
+  }
+]

@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import NavItemIcon from '../../components/NavItemIcon';
-
+import banner from '../../assets/images/home-banner.png';
 
 
 const Header = () => {
   const [isLoggedIn] = useState(false);
 
   return (
+    <div>
       <header>
   <div>
     <a href="/"><h1 className="orderlly">Orderl.ly</h1></a>
@@ -40,6 +41,10 @@ const Header = () => {
   </nav>
 </div>
 </header>
+    <div className="home-banner">
+    <img className="banner-img" src={banner} alt="home-banner" />
+  </div>
+  </div>
   );
 };
 

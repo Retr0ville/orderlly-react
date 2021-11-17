@@ -11,6 +11,18 @@ const pcSchema = new Schema(
     img: {
       type: String
     },
+    storageSize: {
+      type: String
+    },
+    quantity: {
+      type: Number
+    },
+    ram: {
+      type: String
+    },
+    graphicsCard: {
+      type: String
+    },
     // userId: {
     //   type: String,
     //   required: true

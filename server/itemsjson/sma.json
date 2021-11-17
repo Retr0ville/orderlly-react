@@ -1,0 +1,34 @@
+[
+  {
+    "itemName": "Google Stadia Controller",
+    "img": "https://i.ibb.co/MRSvDRc/T01-LP2a-VX4-W-TRETes-N6-ZQs9-BVZv3-Fqqv3-ICX5-Mu-Zt-ABz-SAv5hs5-RE4-Dihhiv-F2-g6dk-PLPua-Dwa-XLUEDp.webp",
+    "quantity" : 137,
+    "description" : "The Stadia Controller is the best way to play games on Stadia across screens. You can use it to take control of games on laptops, desktops, compatible tablets and phones and TVs with a compatible Chromecast device2.",
+    "itemStatus" : "C3",
+    "cost" : 69.99
+  },
+  {
+    "itemName": "Razer Kishi Smartphone Gaming Controller",
+    "img": "https://i.ibb.co/gmbpCMc/61-Vo-GKNtz-RL-SL1420.jpg",
+    "quantity" : 41,
+    "description" : "Latency-free game play for smooth control, fits most Android devices for seamless compatibility",
+    "itemStatus" : "A1",
+    "cost" : 56
+  },
+  {
+    "itemName": "Samsung Galaxy Buds Plus, True Wireless Earbuds",
+    "img": "https://i.ibb.co/ckTJdPb/Samsung-Galaxy-Buds-Plus-2-1600x1066.jpg",
+    "quantity" : 168,
+    "description" : "Bluetooth 5.0 (Wireless Charging Case Included), Black – US Version",
+    "itemStatus" : "B2",
+    "cost" : 79
+  },
+  {
+    "itemName": "Anker Portable Charger, PowerCore Essential 20000 PD (18W) Power Bank",
+    "img": "https://i.ibb.co/CVTcxRc/61gl9y-YMxn-L-AC-SL1500.jpg",
+    "quantity" : 276,
+    "description" : "18W USB C Charger,high Cell Capacity 20,000mAh power Delivery Battery Pack for iPhone 11/11 Pro/11 Pro Max/X/8, Samsung",
+    "itemStatus" : "A1",
+    "cost" : 38
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "itemName": "Asus ROG Phone 5",
+    "img": "https://i.ibb.co/Dfgpwc3/gsmarena-001.jpg",
+    "storageSize": "128GB",
+    "ram" : "12GB",
+    "processor" : "Snapdragon 888",
+    "quantity" : 321,
+    "description" : "Clean, yet very feature-rich Android OS, complete with unparalleled gaming options and tweaking controls. 144Hz AMOLED display, with excellent automatic refresh rate handling and high refresh rate gaming support",
+    "itemStatus" : "B2",
+    "cost" : 719.99
+  },
+  {
+    "itemName": "Apple Iphone 12",
+    "img": "https://i.ibb.co/sqr7L11/header-thumb2.jpg",
+    "storageSize": "128GB",
+    "ram" : "4GB",
+    "processor" : "Apple A14 chip",
+    "quantity" : 124,
+    "description" : "It is one very capable phone for gaming thanks to its punchy OLED and powerful Apple A14 chip",
+    "itemStatus" : "C3",
+    "cost" : 549
+  },
+  {
+    "itemName": "ZTE nubia Red Magic 6s Pro",
+    "img": "https://i.ibb.co/LtWZvTF/gsmarena-001.jpg",
+    "storageSize": "256GB",
+    "ram" : "16GB",
+    "processor" : "Snapdragon 888+",
+    "quantity" : 230,
+    "description" : "165Hz AMOLED display, minimal touch latency, Snapdragon 888+ with a built-in fan ensures sustained top performance for long gaming sessions. Trigger buttons with 450Hz touch sampling",
+    "itemStatus" : "B2",
+    "cost" : 699
+  },
+  {
+    "itemName": "Lenovo Legion Duel 2",
+    "img": "https://i.ibb.co/hyM6jCS/lenovo-legion-duel-2.jpg",
+    "storageSize": "512GB",
+    "ram" : "16GB",
+    "processor" : "Snapdragon 888 5G",
+    "quantity" : 44,
+    "description" : "Great 144Hz OLED display, HDR10+, no cutouts, promising battery life and blazing fast charging",
+    "itemStatus" : "A1",
+    "cost" : 1009
+  }
+]

@@ -33,12 +33,13 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background-color: #fa0000cb;
-  background: -webkit-linear-gradient(
+  /* background-color: #fa0000cb; */
+  /* background: -webkit-linear-gradient(
     rgb(240, 218, 218),
     rgb(164, 161, 221),
     rgb(241, 242, 255)
-  );
+  ); */
+  background-color: #89a2d3;
 }
 a.item-name {
   text-decoration: none;
@@ -58,12 +59,17 @@ header {
     rgb(196, 182, 218),
     rgb(240, 139, 139)
   ); */
+  /* background: -webkit-linear-gradient(
+    rgba(167, 165, 175, 0.842),
+    rgba(61, 57, 71, 0.993),
+    rgba(110, 108, 108, 0.61)
+  ); */
   background: -webkit-linear-gradient(
     rgba(153, 148, 170, 0.842),
     rgba(202, 184, 238, 0.76),
     rgba(255, 205, 205, 0)
   );
-  transition: 3s all;
+  /* transition: 3s all; */
   /* background-color: rgba(98, 0, 255, 0.205) */
 }
 
@@ -87,10 +93,15 @@ h1.orderlly {
     rgb(153, 0, 255)
   ); */
   background: -webkit-linear-gradient(
+    rgba(44, 21, 177, 0.918),
+    rgb(0, 0, 231),
+    rgb(255, 33, 4)
+  );
+  /* background: -webkit-linear-gradient(
     rgba(38, 0, 255, 0.863),
     rgb(0, 0, 231),
     rgb(100, 0, 255)
-  );
+  ); */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -155,6 +166,24 @@ a.nav-link {
 .header-nav .fa.fa-star {
   text-shadow: 1px 1.5px red;
 }
+
+div.home-banner {
+  display: flex;
+  position: relative;
+  top: 40px;
+  right: 10px !important;
+  width: 100%;
+  max-height: fit-content;
+  justify-content: flex-end;
+
+}
+
+img.banner-img {
+  width: 50%;
+  max-width: 550px;
+  object-fit: scale-down;
+}
+
 a.nav-link {
   transition: 0.5s;
 }

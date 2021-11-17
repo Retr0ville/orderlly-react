@@ -11,6 +11,12 @@ const smartphoneSchema = new Schema(
     img: {
       type: String
     },
+    storageSize: {
+      type: String
+    },
+    quantity: {
+      type: Number
+    },
     // userId: {
     //   type: String,
     //   required: true

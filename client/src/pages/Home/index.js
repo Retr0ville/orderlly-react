@@ -3,12 +3,17 @@ import React from 'react';
 import Header from '../../layout/header';
 import Footer from '../../layout/footer';
 import Carousel from '../../layout/carousel';
+import pc from '../../assets/images/pc.gif';
+import pcac from '../../assets/images/pcac.gif';
+import sm from '../../assets/images/sm.gif';
+import smac from '../../assets/images/smac.gif';
 
 const Home = (props) => {
   return (
 <div >
       <Header />
-  <div className="main">
+<div className="main">
+
       <Carousel />
 
 <div className="container">
@@ -17,18 +22,18 @@ const Home = (props) => {
       <h2 className="card-title">Categories</h2>
       <div className="card-group">
         <div className="card">
-          <a href="/pcs"><img className="card-img-top" src="img/1.jpg" alt="Card image cap"/></a>
+          <a href="/pcs"><img className="card-img-top" src={pc} alt="Card image cap"/></a>
         </div>
         <div className="card">
-          <a href="/pc-accessories"><img className="card-img-top" src="img/2.jpg" alt="Card image cap"/></a>
+          <a href="/pc-accessories"><img className="card-img-top" src={pcac} alt="Card image cap"/></a>
         </div>
       </div>
       <div className="card-group">
         <div className="card">
-          <a className="no-underline" href="/smartphones"><img className="card-img-top" src="img/1.jpg" alt="Card image cap"/></a>
+          <a className="no-underline" href="/smartphones"><img className="card-img-top" src={sm} alt="Card image cap"/></a>
         </div>
         <div className="card">
-          <a href="/smartphone-accessories"><img className="card-img-top" src="img/2.jpg" alt="Card image cap"/></a>
+          <a href="/smartphone-accessories"><img className="card-img-top" src={smac} alt="Card image cap"/></a>
         </div>
       </div>
     </div>

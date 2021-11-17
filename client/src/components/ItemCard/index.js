@@ -17,7 +17,7 @@ const ItemCard = (props) => {
         </p>
         <h2 className="cost">{props.cost}</h2>
         <div className="description">
-          <p className="carrier">{props.carrier}</p>
+          <p className="extra">{props.description}</p>
           <p className="quantity">{props.quantity} Available</p>
           <p className="date">Added on: {props.postedOn}</p>
         </div>
