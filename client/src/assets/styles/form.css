@@ -1,5 +1,6 @@
 form {
-  display: flex;
+  position: relative;
+  bottom: 75px;
   margin: 0 auto;
   width: fit-content;
   max-width: 900px;
@@ -8,29 +9,31 @@ label.iconLabel {
   position: relative;
   right: 9vw;
   margin-right: 10px;
-  max-height: 33px;
   box-shadow: 1px 1px rgba(17, 17, 17, 0.767);
-  border-radius: 40%;
-  padding: 4px 7px;
-  background-color: rgba(99, 31, 226, 0.103);
+  border-radius: 35%;
+  padding: 7px;
+  background-color: rgb(49, 49, 49);
+   color: rgb(184, 191, 255);
   transition: all 0.5s;
 }
 label.iconLabel:hover {
+  color: rgb(197, 37, 37);
   transform: translateY(-1px);
-  box-shadow: 1px 1px rgba(17, 17, 17, 0.767);
-  background-color: rgba(99, 31, 226, 0.185);
+  box-shadow: 1px 1.5px rgba(17, 17, 17, 0.767);
+ /* background-color: rgb(81, 95, 223); */
 }
 label.iconLabelActive {
   position: relative;
   right: 0vw;
   margin-right: 10px;
   border-radius: 40%;
-  padding: 4px 7px;
+  padding: 7px;
   box-shadow: 0.2px 0.5px rgba(17, 17, 17, 0.767);
-  background-color: rgba(226, 31, 31, 0);
-  transition: all 500ms;
+  background-color: rgb(197, 37, 37);
+  transition: all 200ms;
 }
 .input {
+  height: 10px;
   width: 550px;
   border-radius: 4px 0px 0px 4px;
   height: 33px;
@@ -83,6 +86,7 @@ div.trans {
 
 .ui.label {
   position: relative;
+  bottom:75px;
   left: 220px;
   font-size: x-small;
   box-shadow: 1px 1px rgba(17, 17, 17, 0.767);
