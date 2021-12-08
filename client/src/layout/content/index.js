@@ -13,9 +13,13 @@ const Content = (props) => {
 
   async function loadItems() {
     try {
-      const response = await axios.get(props.endpoint);
-      console.log(response.data.message);
-      return response.data.data;
+      const response = await axios.get(props.endpoint, {
+        baseURL: "http://localhost:5100",
+        method: "GET",
+        mode: "cors",
+      });
+      console.log(response.data);
+      return response.data;
     } catch (err) {
       return err;
     }
@@ -24,8 +28,9 @@ const Content = (props) => {
     console.log("updating");
     loadItems()
       .then((result) => {
-        result.data ? setItemData(result.data) : setItemData([]);
-        setMsgData(result.data ? `Found ${result.data.length} items` : "no items were found");
+        result.length > 0 ? setItemData(result) : setItemData([]);
+        setMsgData(result.length > 0 ? `Found ${result.length} items` : "no items were found");
+        console.log("updated");
       })
       .catch((err) => {
         setErr(err);
@@ -37,31 +42,28 @@ const Content = (props) => {
   }, []);
 
   const itemCards = itemData.map((item) => {
-    const { imgUrl, name } = item;
-
-    if (item.data) {
-      return item.data.map(({ price }) => {
-        const { id, amount, quantity, grade, description, storageSize, createdAt } =
-          price;
-        //  price : {}
         return (
-          <Col key={id || ""} className="item">
+          <Col key={item._id || ""} className="item">
+            <a href={`${props.endpoint}/${item._id}`}>
             <ItemCard
-              itemImage={imgUrl || ""}
-              grade={grade || ""}
+              title={item.itemName || ""}
+              itemImage={item.img || ""}
+              grade={item.itemStatus || ""}
 
               //todo *  carrier to description
-              quantity={quantity || ""}
-              description={description || ""}
-              postedOn={createdAt ? createdAt.slice(0, 10) : ""}
-              title={name || ""}
-              storageSize={storageSize || ""}
-              cost={`$${amount || ""}`}
+              quantity={item.quantity || ""}
+              description={item.description || ""}
+              postedOn={item.createdAt ? item.createdAt.slice(0, 10) : ""}
+              
+              ram={item.storageSize || ""}
+              graphicsCard={item.graphicsCard || item.processor || ""}
+              storageSize={item.storageSize || ""}
+              cost={`$${item.cost || ""}`}
             />
+            </a>
           </Col>
         );
-      });
-    } else return [];
+
   });
 
   return (
