@@ -48,6 +48,7 @@ label.iconLabelActive {
 }
 
 .searchBtn {
+  background-color:#313131;
   border-radius: 0px 4px 4px 0px;
   box-shadow: 1px 1px red;
   border: none;
@@ -55,6 +56,7 @@ label.iconLabelActive {
   margin-right: 1px;
   margin-bottom: 1px;
   text-shadow: 0.3px 0.3px #ff000000;
+  color: rgb(223, 33, 33);
 }
 .searchBtn:focus {
   background-color: rgb(202, 202, 202);

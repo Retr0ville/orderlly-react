@@ -72,13 +72,13 @@
 .store-item .description {
   position: relative;
   width: fit-content;
-  height: 24px;
+  height: 25px;
   top: -5px;
   font-weight: 400;
   /* width: h00px; */
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.5px;
-  color: #c4c4c4;
+  color: #e7e7e7ea;
   line-height: 1.1;
   /* bottom: -5px; */
   overflow: clip;
@@ -219,10 +219,11 @@ h2.grade {
     line-height: normal;
     text-align: left;
     font-size: 9px;
+    font-weight: 400;
     width: fit-content;
-    height: fit-content;
+    height: 23px;
     overflow: hidden;
-    padding-right: 0px;
+    padding-right: 25px;
   }
 }
 @media only screen and (max-width: 363px) {
