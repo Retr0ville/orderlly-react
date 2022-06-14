@@ -30,6 +30,15 @@
 
 
 #root {
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  background: -webkit-linear-gradient(
+    rgb(33, 255, 151),
+    rgb(82, 211, 223),
+    rgb(255, 255, 255) 60%
+  );
+}
   /* height: 100vmax; */
   /* background-color: #000000cb; */
   /* background: -webkit-linear-gradient(
@@ -38,59 +47,66 @@
     rgb(186, 187, 194)
   ); */
 /* background-color: rgba(3, 0, 3, 0.781); */
-}
+/* } */
 a.item-name {
   text-decoration: none;
 }
 
 .body {
-  height: 100vh;
-  /* width: 96vw; */
+  position: relative;
+  height: 100%;
+  background-color: #f0f1f2;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
 }
 .main {
   flex: 1;
-  background-color: #fff;
+  background-color: #f0f1f2;
 }
-
+.header-banner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 header {
-  position: sticky;
-  /* height: 50px; */
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  /* height: 4rem !important; */
+  /* max-width: 1200px; */
   width: 100%;
   z-index: 100;
-  /* background: -webkit-linear-gradient(
-    rgb(255, 255, 255),
-    rgb(196, 182, 218),
-    rgb(240, 139, 139)
-  ); */
+  background-color: white
+
   /* background: -webkit-linear-gradient(
     rgba(167, 165, 175, 0.842),
     rgba(61, 57, 71, 0.993),
     rgba(110, 108, 108, 0.61)
   ); */
-  background: -webkit-linear-gradient(
-    rgba(153, 148, 170, 0.842),
+  /* background: -webkit-linear-gradient(45deg,
+    rgba(92, 42, 255, 0.842),
     rgba(202, 184, 238, 0.76),
     rgba(255, 205, 205, 0)
   );
+  background: linear-gradient(45deg,
+  rgb(0, 0, 0),
+    rgba(0, 0, 0, 0.76),
+    rgba(255, 255, 255, 0.912)
+  ); */
   /* transition: 3s all; */
   /* background-color: rgba(98, 0, 255, 0.205) */
 }
 
 header:hover {
-  background: -webkit-linear-gradient(
-    rgba(153, 148, 170, 0.808),
-    rgba(202, 184, 238, 0.699),
-    rgba(216, 165, 165, 0.212)
-  );
+  background-color: white
 }
 
 div.container {
   padding-top: 60px;
 }
 
-h1.orderlly {
+.orderlly {
   height: max-content;
   border-bottom: 2px double rgb(187, 43, 43);
   
@@ -101,9 +117,9 @@ h1.orderlly {
     rgb(153, 0, 255)
   ); */
   background: -webkit-linear-gradient(
-    rgba(44, 21, 177, 0.918),
-    rgb(0, 0, 231),
-    rgb(255, 33, 4)
+    rgb(21, 181, 212),
+    rgb(0, 0, 255),
+    rgb(0, 251, 255)
   );
   /* background: -webkit-linear-gradient(
     rgba(38, 0, 255, 0.863),
@@ -114,10 +130,10 @@ h1.orderlly {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   /* color: rgb(139, 73, 73); */
-  position: absolute;
-  padding: 0px;
-  top: 0px;
-  left: 20px;
+  /* position: absolute; */
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+  margin: 0 0 0 1rem !important;
   font-size: 2rem;
   font-weight: 650;
 }
@@ -179,8 +195,7 @@ div.home-banner {
   background-color: #282c34;
   display: flex;
   position: relative;
-  top: 35px;
-  right: 10px !important;
+  top: 38px;
   width: 100%;
   max-height: fit-content;
   justify-content: flex-end;
@@ -274,7 +289,18 @@ div .item-cost {
 h5.card-title.item-name {
   text-decoration: none;
 }
-
+.categories, .categories-container {
+  border-radius: 1rem;
+  border: none;
+  /* box-shadow: none !important; */
+  box-shadow: 0px 2px 15px #bfbfbf4f !important;
+}
+.categories > .card-title {
+  color: #282c34;
+}
+.categories {
+  padding: 1rem 0 0 0;
+}
 div .card-text.item-description {
   margin-bottom: 25px;
   font-size: 12px;

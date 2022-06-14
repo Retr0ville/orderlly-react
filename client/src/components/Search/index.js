@@ -24,7 +24,7 @@ const Search = () => {
         </label>
         <div className="hidden">
           <div className={`trans ${classN}`}>
-            <input
+            <input  
               className="input"
               type="search"
               name="search"

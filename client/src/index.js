@@ -7,6 +7,7 @@ import "./assets/styles/App.css";
 import "./assets/styles/bootstrap.min.css";
 import "./assets/styles/font-awesome.min.css";
 import ItemList from "./pages/itemList";
+import ItemDetail from "./pages/ItemDetail";
 // import SmartphoneList from "./pages/SmartphoneList";
 // import SmartphoneAccessoryList from "./pages/SmartphoneAccessoryList";
 // import PcAccessoryList from "./pages/PcAccessoryList";
@@ -18,6 +19,9 @@ const App = () => {
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route path = {["/pcs/:id", "/pc-accessories/:id", "/smartphones/:id", "/smartphone-accessories/:id"]}>
+          <ItemDetail url = {history.location.pathname}/>
         </Route>
         <Route path={["/pcs", "/pc-accessories", "/smartphones", "/smartphone-accessories"]}>
           <ItemList url = {history.location.pathname} />

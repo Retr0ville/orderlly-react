@@ -16,16 +16,16 @@ const pc_create_post = (req, res) => {
     })
     .catch((err) => {
       console.log(err)
-      res.json({
+      res.status(401).json({
         error: err,
-        message: 'item may not exist'
+        message: 'item could not be posted'
       })
     })
 }
 
 const pcs_get = (req, res) => {
   console.log('received get req')
-
+  res.set('Access-Control-Allow-Origin', '*')
   Pc.find()
     .then((result) => {
       const items = result
@@ -33,7 +33,7 @@ const pcs_get = (req, res) => {
     })
     .catch((err) => {
       console.log(err)
-      res.json({
+      res.status(400).json({
         error: err,
         message: "error: couldn't fetch items"
       })
@@ -41,6 +41,7 @@ const pcs_get = (req, res) => {
 }
 
 const pc_detail = (req, res) => {
+  res.set('Access-Control-Allow-Origin', '*')
   const id = req.params.id
   Pc.findById(id)
     .then((result) => {
@@ -49,7 +50,7 @@ const pc_detail = (req, res) => {
     })
     .catch((err) => {
       console.log(err)
-      res.json({
+      res.status(404).json({
         error: err,
         message: 'error: no items found'
       })
@@ -57,6 +58,7 @@ const pc_detail = (req, res) => {
 }
 
 const pc_delete = (req, res) => {
+  res.set('Access-Control-Allow-Origin', '*')
   const id = req.params.id
   Pc.findByIdAndDelete(id)
     .then((result) => {
@@ -66,7 +68,7 @@ const pc_delete = (req, res) => {
     .catch((err) => {
       // preferably print "an error occured"
       console.log(err)
-      res.json({
+      res.status(404).json({
         error: err,
         message: 'item may not exist'
       })

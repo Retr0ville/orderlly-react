@@ -3,6 +3,7 @@ const SmartphoneAccessory = require('../models/smartphoneAccessory')
 // post to pcAccessories
 
 const smartphone_accessory_create_post = (req, res) => {
+  res.set('Access-Control-Allow-Origin', '*')
   const userAccessory = req.body
   const accessory = new SmartphoneAccessory(userAccessory)
   accessory
@@ -11,18 +12,19 @@ const smartphone_accessory_create_post = (req, res) => {
       console.log(result)
       const item = result
       //  send a success response
-      res.json(item)
+      res.status(401).json(item)
     })
     .catch((err) => {
       console.log(err)
       res.json({
         error: err,
-        message: 'item may not exist'
+        message: 'item could not be posted'
       })
     })
 }
 
 const smartphone_accessories_get = (req, res) => {
+  res.set('Access-Control-Allow-Origin', '*')
   SmartphoneAccessory.find()
     .then((result) => {
       const items = result
@@ -30,7 +32,7 @@ const smartphone_accessories_get = (req, res) => {
     })
     .catch((err) => {
       console.log(err)
-      res.json({
+      res.status(404).json({
         error: err,
         message: "error: couldn't fetch items"
       })
@@ -38,6 +40,7 @@ const smartphone_accessories_get = (req, res) => {
 }
 
 const smartphone_accessory_detail = (req, res) => {
+  res.set('Access-Control-Allow-Origin', '*')
   const id = req.params.id
   SmartphoneAccessory.findById(id)
     .then((result) => {
@@ -46,7 +49,7 @@ const smartphone_accessory_detail = (req, res) => {
     })
     .catch((err) => {
       console.log(err)
-      res.json({
+      res.status(404).json({
         error: err,
         messege: 'error: no items found'
       })
@@ -54,6 +57,7 @@ const smartphone_accessory_detail = (req, res) => {
 }
 
 const smartphone_accessory_delete = (req, res) => {
+  res.set('Access-Control-Allow-Origin', '*')
   const id = req.params.id
   SmartphoneAccessory.findByIdAndDelete(id)
     .then((result) => {
@@ -63,7 +67,7 @@ const smartphone_accessory_delete = (req, res) => {
     .catch((err) => {
       // preferably print "an error occured"
       console.log(err)
-      res.json({
+      res.status(404).json({
         error: err,
         message: 'item may not exist'
       })

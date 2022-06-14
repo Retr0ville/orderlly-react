@@ -6,7 +6,7 @@ import Content from '../../layout/content'
 const itemList = ({url}) => {
   // const endpoint = url === "/pcs"? "" : url === "/pc-accessories"? "" : url === "/smartphones"? "" : url === "/smartphone-accessories"? "" : ""
   return (
-    <div>
+    <div className="body">
       <Header />
       <div className="main">
         <Content

@@ -10,18 +10,16 @@ import smac from '../../assets/images/smac.gif';
 
 const Home = (props) => {
   return (
-<div >
+<div className = "body" >
       <Header />
-<div className="main">
-
       <Carousel />
-
+<div className="main">
 <div className="container">
-  <div className="card bg-secondary card-max-width">
-    <div className="card-body opacity">
+  <div className="card categories-container card-max-width">
+    <div className="card-body opacity categories">
       <h2 className="card-title">Categories</h2>
       <div className="card-group">
-        <div className="card">
+        <div className="card" style={{backgroundColor: "#4ad0f1"}}>
           <a href="/pcs"><img className="card-img-top" src={pc} alt="Card image cap"/></a>
         </div>
         <div className="card">
@@ -32,7 +30,7 @@ const Home = (props) => {
         <div className="card">
           <a className="no-underline" href="/smartphones"><img className="card-img-top" src={sm} alt="Card image cap"/></a>
         </div>
-        <div className="card">
+        <div className="card" style={{backgroundColor: "#2f2f2f"}}>
           <a href="/smartphone-accessories"><img className="card-img-top" src={smac} alt="Card image cap"/></a>
         </div>
       </div>

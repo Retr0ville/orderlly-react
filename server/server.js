@@ -23,9 +23,9 @@ mongoose
   .connect(dbUri)
   .then(() => {
     console.log('connected to MongodB')
-    app.listen(3000, (err) => {
+    app.listen(5100, (err) => {
       if (err) return console.log(err)
-      console.log('listening on port 3000...')
+      console.log('listening on port 5100...')
     })
   })
   .catch((err) => {

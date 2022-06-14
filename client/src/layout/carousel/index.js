@@ -46,7 +46,7 @@ const Carousel = (props) => {
   };
 
   return (
-    <div className="container">
+    <div className="carousel container">
     <div className="row">
       <div className="col-md-12">
         <OwlCarousel id="featured-slider" className="owl-carousel owl-theme" {...options}>
