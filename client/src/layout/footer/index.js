@@ -1,32 +1,35 @@
-import React from 'react';
+import React from "react";
 
 const Footer = (props) => {
   return (
-    
-      
-<div className  ="footer">
- 
-  <div className ="footer-nav">
-  <nav>
-    <ul className ="nav justify-content-end">
-      <li className ="nav-item">
-          <a className ="nav-link" href="/"><i class="fa fa-github " aria-hidden="true"></i> Rtrvl's Github</a>
-      </li>
-      <li className ="nav-item">
-          <a className ="nav-link" href="/"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a>
-      </li>
-      <li className ="nav-item">
-        <a className ="nav-link" href="/"><i class="fa fa-address-book" aria-hidden="true"></i> contact me</a>
-      </li>
-    </ul>
-  </nav>
-</div>
-  <footer id="footer">
-    
-    <span><i className ="fa fa-copyright" aria-hidden="true"></i> Rtrvl 2021</span>
-  </footer>
-</div>
-    
+    <div className="footer h-100 bg-dark">
+      <div className="footer-nav d-flex justify-content-end">
+        <nav>
+          <ul className="nav flex-column mt-4 w-100">
+            <li className="nav-item mb-3 ">
+              <a className="nav-link text-secondary" href="/">
+                <i class="fa fa-github " aria-hidden="true"></i> Rtrvl's Github
+              </a>
+            </li>
+            <li className="nav-item mb-3">
+              <a className="nav-link w-100 text-secondary" href="/">
+                <i class="fa fa-info-circle" aria-hidden="true"></i> About me
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link w-100 text-secondary" href="/">
+                <i class="fa fa-address-book" aria-hidden="true"></i> Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <footer id="footer">
+        <span className=" text-black opacity-50">
+          <i className="fa fa-copyright" aria-hidden="true"></i> Rtrvl 2022
+        </span>
+      </footer>
+    </div>
   );
 };
 
