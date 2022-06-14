@@ -317,6 +317,42 @@ h5.card-title.item-name {
   padding: 1rem 0 0 0;
   box-shadow: none !important;
 }
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.category-img:hover .image {
+  opacity: 0.8;
+}
+
+.category-img:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04a2aa6d;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
 div .card-text.item-description {
   margin-bottom: 25px;
   font-size: 12px;
