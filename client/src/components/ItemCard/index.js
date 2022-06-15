@@ -10,17 +10,18 @@ const ItemCard = (props) => {
       <div className="bpic">
         <img src={props.itemImage} alt="store-item" />
       </div>
-      <div className="details d-flex justify-content-around">
-        <h3 className="title position-absolute top-0">{props.title}</h3>
+      <div className="details d-flex justify-content-between pb-0 mb-0">
+        <h3 className="title position-absolute">{props.title}</h3>
         {props.storageSize && (
-          <p className="storage">
+          <p className="storage p-0 m-0">
             <code>{props.storageSize}</code>
           </p>
         )}
         <h2 className="cost">{props.cost}</h2>
-        <div className="description">
-          <p className="extra p-0 m-0">{props.description}</p>
-          <p className="quantity p-0 m-0 mt-2 ju">{props.quantity} Available</p>
+        <div className="description p-0 m-0 pt-md-2">
+          <p className="extra p-0 m-0 text-light mb-1 mb-sm-2">{props.description}</p>
+          <hr className="m-0 mt-0 mt-sm-2"/>
+          <p className="quantity p-0 m-0 mt-2">{props.quantity} Available</p>
           <p className="date p-0 m-0">Added on: {props.postedOn}</p>
         </div>
       </div>

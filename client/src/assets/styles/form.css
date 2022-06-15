@@ -61,6 +61,9 @@ label.iconLabelActive {
 .searchBtn:focus {
   background-color: rgb(202, 202, 202);
 }
+.searchBtn:hover {
+  background-color: rgb(49, 49, 49);
+}
 /* 
 div.hidden {
   padding: 0;

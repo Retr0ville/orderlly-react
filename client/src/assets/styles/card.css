@@ -104,6 +104,7 @@
   color: #ffffff;
   width: fit-content;
   height: 30px;
+  top: 215px;
   /* overflow: hidden; */
 }
 
@@ -129,7 +130,9 @@
   color: #00ff6aa4;
   font-style: italic;
 }
-
+.store-item .quantity, .store-item .date {
+  color: #dddddd;
+}
 h2.grade {
   position: absolute;
   z-index: 10;
@@ -154,17 +157,15 @@ h2.grade {
   }
   .store-item .description {
     font-size: 11px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.4px;
     margin-bottom: 8px;
+    margin-top: 10px !important;
   }
 }
 @media only screen and (max-width: 506px) {
   .store-item {
     padding: 0px;
-  }
-  .store-item .description {
-    margin-bottom: 7px;
   }
 }
 @media only screen and (max-width: 457px) {
@@ -183,6 +184,8 @@ h2.grade {
     font-weight: 500;
     letter-spacing: 0.8px;
     margin-bottom: 0px;
+    
+  top: 170px;
     /* width: max-content; */
     height: fit-content;
     /* overflow: hidden; */
@@ -192,9 +195,10 @@ h2.grade {
     text-align: left;
     padding-right: 10px;
     font-size: 10px;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.6px;
     margin-bottom: 0px;
+    margin-top: 0px !important;
     width: fit-content;
   }
   .store-item .cost {
@@ -217,6 +221,7 @@ h2.grade {
     font-weight: 500;
     letter-spacing: 0.6px;
     width: fit-content;
+    top: 140px;
     /* height: min-content; */
     /* overflow: hidden;
     bottom: 23px; */
@@ -237,13 +242,13 @@ h2.grade {
 }
 @media only screen and (max-width: 363px) {
   .store-item {
-    height: 220px;
+    height: 230px;
   }
   .store-item img {
     height: 150px;
   }
   .store-item .details {
-    height: 70px;
+    height: 80px;
     padding: 0px 8px;
   }
   .store-item .title {
@@ -251,8 +256,7 @@ h2.grade {
     letter-spacing: 0.6px;
     width: fit-content;
     height: fit-content;
-    /* overflow-x: auto; */
-    bottom: 20px;
+    top: 125px;
   }
   .store-item .cost {
     font-size: 9px;
@@ -265,13 +269,13 @@ h2.grade {
 }
 @media only screen and (max-width: 337px) {
   .store-item {
-    height: 200px;
+    height: 210px;
   }
   .store-item img {
     height: 142px;
   }
   .store-item .details {
-    height: 58px;
+    height: 68px;
     padding: 0px 8px;
   }
 
@@ -279,8 +283,8 @@ h2.grade {
     font-size: 8px;
     line-height: 0.55rem;
     letter-spacing: 0.6px;
-    bottom: 18px;
     width: fit-content;
+    top: 120px;
   }
   .store-item .cost {
     font-size: 7px;
