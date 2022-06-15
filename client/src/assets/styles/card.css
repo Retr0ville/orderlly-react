@@ -91,6 +91,12 @@
   /* overflow: clip; */
   /* margin-bottom: 15px; */
 }
+.store-item .storage {
+ line-height: 12px;
+}
+/* .store-item .extra {
+  margin-top: -10px !important;
+} */
 .store-item .title {
   /* float: left; */
 
@@ -110,7 +116,6 @@
 
 .store-item .storage {
   padding: 0px;
-  line-height: 1px;
 }
 
 .store-item .cost {
@@ -160,12 +165,20 @@ h2.grade {
     font-weight: 400;
     letter-spacing: 0.4px;
     margin-bottom: 8px;
-    margin-top: 10px !important;
+    /* margin-top: 10px !important; */
   }
 }
 @media only screen and (max-width: 506px) {
   .store-item {
     padding: 0px;
+  }
+}
+@media only screen and (min-width: 457px) and (max-width: 767px) {
+  .store-item .details hr {
+    margin-top: 1rem !important;
+  }
+  .store-item .details .extra {
+    margin-top: .5rem !important;
   }
 }
 @media only screen and (max-width: 457px) {
@@ -204,8 +217,18 @@ h2.grade {
   .store-item .cost {
     font-size: 12px;
   }
+  .store-item .extra {
+    height: 25px;
+    overflow: hidden;
+  }
+  .store-item .storage {
+    font-size: 12px;
+  }
 }
 @media only screen and (max-width: 409px) {
+  .store-item .extra {
+    height: 22px;
+  }
   .store-item {
     height: 240px;
   }
