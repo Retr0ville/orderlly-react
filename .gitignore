@@ -1,3 +1,5 @@
+server/node_modules/*
+client/node_modules/*
 server/node_modules/.bin/ejs
 server/node_modules/.bin/ejs.cmd
 server/node_modules/.bin/ejs.ps1
@@ -1023,3 +1025,14 @@ server/node_modules/yallist/LICENSE
 server/node_modules/yallist/package.json
 server/node_modules/yallist/README.md
 server/node_modules/yallist/yallist.js
+server/node_modules/.package-lock.json
+server/node_modules/dotenv/CHANGELOG.md
+server/node_modules/dotenv/config.d.ts
+server/node_modules/dotenv/config.js
+server/node_modules/dotenv/LICENSE
+server/node_modules/dotenv/package.json
+server/node_modules/dotenv/README.md
+server/node_modules/dotenv/lib/cli-options.js
+server/node_modules/dotenv/lib/env-options.js
+server/node_modules/dotenv/lib/main.d.ts
+server/node_modules/dotenv/lib/main.js
