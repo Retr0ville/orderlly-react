@@ -1,3 +1,10 @@
+#root {
+  background: -webkit-linear-gradient(
+    rgb(33, 255, 166),
+    rgb(82, 211, 223),
+    rgb(255, 255, 255) 60%
+  );
+}
 .item__detail {
   /****LAYOUT****/
   position: relative;

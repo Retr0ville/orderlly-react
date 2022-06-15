@@ -18,14 +18,12 @@ const Content = (props) => {
         method: "GET",
         mode: "cors",
       });
-      console.log(response.data);
       return response.data;
     } catch (err) {
       return err;
     }
   }
   const updateItemList = () => {
-    console.log("updating");
     loadItems()
       .then((result) => {
         result.length > 0 ? setItemData(result) : setItemData([]);
@@ -46,13 +44,13 @@ const Content = (props) => {
           <Col key={item._id || ""} className="item">
             <a href={`${props.endpoint}/${item._id}`}>
             <ItemCard
-              title={item.itemName || ""}
+              title={item.itemName ? (item.itemName.slice(0, 35) + "...") : ""}
               itemImage={item.img || ""}
               grade={item.itemStatus || ""}
 
               //todo *  carrier to description
               quantity={item.quantity || ""}
-              description={item.description || ""}
+              description={item.description ? (item.description.slice(0, 60) + "...") : ""}
               postedOn={item.createdAt ? item.createdAt.slice(0, 10) : ""}
               
               ram={item.storageSize || ""}

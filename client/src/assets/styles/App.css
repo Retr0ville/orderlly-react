@@ -32,10 +32,15 @@
 #root {
   width: 100vw;
   background: -webkit-linear-gradient(
-    rgb(33, 255, 225),
+    rgb(33, 255, 166),
     rgb(82, 211, 223),
-    rgb(255, 255, 255) 80%
+    rgb(255, 255, 255)  50%
   );
+  background: linear-gradient(
+    rgb(33, 255, 166),
+    rgb(82, 211, 223),
+    rgb(255, 255, 255)  50%
+  ) !important;
 }
   /* height: 100vmax; */
   /* background-color: #000000cb; */
@@ -84,7 +89,7 @@ header {
   max-width: 1200px;
   width: 100%;
   z-index: 100;
-  background-color: #ffffff67
+  background-color: #282c34
 
   /* background: -webkit-linear-gradient(
     rgba(167, 165, 175, 0.842),
@@ -106,7 +111,7 @@ header {
 }
 
 header:hover {
-  background-color: white
+  /* background-color: rgb(234, 234, 234) */
 }
 
 div.container {
@@ -124,8 +129,8 @@ div.container {
     rgb(153, 0, 255)
   ); */
   background: -webkit-linear-gradient(
-    rgb(21, 181, 212),
-    rgb(0, 0, 255),
+    rgb(255, 255, 255),
+    rgb(243, 243, 255),
     rgb(0, 251, 255)
   );
   /* background: -webkit-linear-gradient(
@@ -159,7 +164,7 @@ div.container {
 }
 
 a.nav-link {
-  color: rgb(0, 119, 255);
+  color: rgb(247, 247, 247);
   transition:all 0.1s;
 }
 
@@ -181,10 +186,10 @@ a.nav-link {
 }
 
 .header-nav a.nav-link:hover {
-  color: rgb(45, 143, 255);
+  color: rgb(0, 251, 255);
   /* box-shadow: 2px -1px  inset rgba(59, 25, 252, 0.623); */
   text-shadow: 0.1px 0.2px;
-  border-bottom: 2px solid rgba(255, 0, 0, 0.63);
+  border-bottom: 2px solid rgb(0, 255, 247);
   /* border-top: 2px solid rgba(255, 0, 0, 0.63); */
 }
 
@@ -199,7 +204,7 @@ a.nav-link {
 }
 
 .header-nav .fa.fa-star {
-  text-shadow: 1px 1.5px red;
+  text-shadow: 1px 1.5px cyan;
 }
 
 div.home-banner {

@@ -3,8 +3,8 @@ import '../../assets/styles/form.css'
 
 const Search = () => {
   const [shown, setShown] = useState(true)
-  const [classN, setClassN] = useState('')
-  const [classLabel, setClassLabel] = useState('iconLabel')
+  const [classN, setClassN] = useState('show')
+  const [classLabel, setClassLabel] = useState('iconLabelActive')
 
   const handleClick = () => {
     shown ? setClassN('show') : setClassN('unshow')

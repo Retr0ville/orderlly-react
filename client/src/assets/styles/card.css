@@ -1,3 +1,10 @@
+#root {
+  background: -webkit-linear-gradient(
+    rgb(33, 255, 166),
+    rgb(82, 211, 223),
+    rgb(82, 82, 82) 20vh
+  );
+}
 .store-item {
   position: relative;
   display: flex;
@@ -46,7 +53,7 @@
     rgb(126, 126, 134),
     rgb(36, 35, 49)
   );
-  position: relative;
+  /* position: relative; */
   height: 250px;
   width: 100%;
   object-fit: cover;
@@ -55,14 +62,14 @@
 .store-item .details {
   display: flex;
   flex-direction: column;
-  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.685);
+  box-shadow: 0px -20px 30px rgba(0, 0, 0, 0.906);
   height: 100px;
   width: 100%;
-  position: relative;
+  /* position: relative; */
   text-align: left;
   padding: 0px 5px 10px 10px;
-  bottom: 0px;
-  left: 0px;
+  /* bottom: 0px;
+  left: 0px; */
   background: -webkit-linear-gradient(
     rgba(0, 0, 0, 0.342),
     rgba(0, 0, 0, 0.603),
@@ -70,10 +77,10 @@
   );
 }
 .store-item .description {
-  position: relative;
+  /* position: relative; */
   width: fit-content;
-  height: 25px;
-  top: -5px;
+  /* height: 25px; */
+  /* top: -5px; */
   font-weight: 400;
   /* width: h00px; */
   font-size: 11px;
@@ -81,13 +88,13 @@
   color: #e7e7e7ea;
   line-height: 1.1;
   /* bottom: -5px; */
-  overflow: clip;
+  /* overflow: clip; */
   /* margin-bottom: 15px; */
 }
 .store-item .title {
   /* float: left; */
 
-  position: relative;
+  /* position: relative; */
   /* bottom: 28px; */
   /* display: inline-block; */
   font-size: 13px;
@@ -96,6 +103,8 @@
   letter-spacing: 1px;
   color: #ffffff;
   width: fit-content;
+  height: 30px;
+  /* overflow: hidden; */
 }
 
 .store-item .storage {
@@ -176,7 +185,7 @@ h2.grade {
     margin-bottom: 0px;
     /* width: max-content; */
     height: fit-content;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
   .store-item .description {
     line-height: normal;
@@ -208,9 +217,9 @@ h2.grade {
     font-weight: 500;
     letter-spacing: 0.6px;
     width: fit-content;
-    height: min-content;
-    overflow: hidden;
-    bottom: 23px;
+    /* height: min-content; */
+    /* overflow: hidden;
+    bottom: 23px; */
   }
   .store-item .cost {
     font-size: 10px;
@@ -221,8 +230,8 @@ h2.grade {
     font-size: 9px;
     font-weight: 400;
     width: fit-content;
-    height: 23px;
-    overflow: hidden;
+    /* height: 23px; */
+    /* overflow: hidden; */
     padding-right: 25px;
   }
 }
@@ -242,7 +251,7 @@ h2.grade {
     letter-spacing: 0.6px;
     width: fit-content;
     height: fit-content;
-    overflow-x: auto;
+    /* overflow-x: auto; */
     bottom: 20px;
   }
   .store-item .cost {
@@ -279,8 +288,8 @@ h2.grade {
   .store-item .description {
     font-size: 7px;
     width: fit-content;
-    height: 20px;
+    /* height: 20px; */
     padding: 2px;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 }
