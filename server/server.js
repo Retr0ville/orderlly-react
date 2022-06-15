@@ -13,20 +13,21 @@ const cookieParser = require('cookie-parser')
 // init
 const app = express()
 const dbUri = process.env.MONGODB_URI
+const PORT = process.env.PORT || 5100
 
 // app.listen(5100, (err) => {
 //   if (err) return console.log(err)
 //   console.log('listening on port 5100...')
 // })
 
-// !connect after testing
+// !connect before listening
 mongoose
   .connect(dbUri)
   .then(() => {
     console.log('connected to MongodB')
-    app.listen(5100, (err) => {
+    app.listen(PORT, (err) => {
       if (err) return console.log(err)
-      console.log('listening on port 5100...')
+      console.log(`listening on port ${PORT}...`)
     })
   })
   .catch((err) => {
