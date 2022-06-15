@@ -1,5 +1,6 @@
 require('dotenv').config()
 const express = require('express')
+const cors = require('cors')
 const mongoose = require('mongoose')
 const path = require('path')
 const pcRoutes = require('./routes/pcRoutes')
@@ -35,7 +36,8 @@ mongoose
   })
 
 // statics and middlewares
-// app.use(express.static('public'))
+app.use(cors())
+app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(cookieParser())
 app.use(express.json())
@@ -55,7 +57,7 @@ app.use('/api/smartphones', smartphoneRoutes)
 app.use('/api/smartphone-accessories', smartphoneAccessoryRoutes)
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/index.html'))
+  res.sendFile(path.join(__dirname, 'public', 'index.html'))
 })
 // const testPost = new PcAccessory({
 //   itemName :'qqq',
