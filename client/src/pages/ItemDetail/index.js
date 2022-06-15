@@ -1,5 +1,7 @@
 import React, { useEffect, useState} from "react";
+
 import SingleItem from "../../layout/SingleItem";
+import { useHistory } from "react-router-dom";
 import Header from "../../layout/header";
 import Footer from "../../layout/footer";
 // import { useParams } from 'react-router-dom';
@@ -8,6 +10,7 @@ import axios from "axios";
 //use hooks later
 const ItemDetail = (props) => {
   // const [itemId, setItemId] = useState("");
+  let history = useHistory();
   const [itemData, setItemData] = useState({});
   // const [err, setErr] = useState("");
 
@@ -15,7 +18,7 @@ const ItemDetail = (props) => {
   async function fetchData() {
  
      const response = await axios.get(props.url, {
-      baseURL: "http://127.0.0.1:5100",
+      baseURL: "http://127.0.0.1:5100/api",
       mode: "cors",
     });
     return response.data;
@@ -32,10 +35,10 @@ const ItemDetail = (props) => {
   useEffect(() => {
     // setItemId(id);
     fetchData().then((data) => {
-      console.log(data);
       setItemData(data);
-    }).catch((err) => {
-      console.log(err);
+    }).catch(() => {
+      // redirect to 404 page
+      history.push("/404");
     })
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

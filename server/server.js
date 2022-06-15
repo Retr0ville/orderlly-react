@@ -1,5 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const path = require('path')
 const pcRoutes = require('./routes/pcRoutes')
 const pcAccessoryRoutes = require('./routes/pcAccessoryRoutes')
 const smartphoneRoutes = require('./routes/smartphoneRoutes')
@@ -47,10 +48,14 @@ app.use(express.json())
 //   // })
 // })
 
-app.use('/pcs', pcRoutes)
-app.use('/pc-accessories', pcAccessoryRoutes)
-app.use('/smartphones', smartphoneRoutes)
-app.use('/smartphone-accessories', smartphoneAccessoryRoutes)
+app.use('/api/pcs', pcRoutes)
+app.use('/api/pc-accessories', pcAccessoryRoutes)
+app.use('/api/smartphones', smartphoneRoutes)
+app.use('/api/smartphone-accessories', smartphoneAccessoryRoutes)
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/index.html'))
+})
 // const testPost = new PcAccessory({
 //   itemName :'qqq',
 //   description: 'eee',

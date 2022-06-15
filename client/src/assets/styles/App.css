@@ -56,11 +56,12 @@ a.item-name {
 }
 
 .body {
+  min-height: 100vh;
   margin: 0 auto !important;
   position: relative;
   height: 100%;
   /* background-color: #f0f1f2; */
-  max-width: 1200px;
+  /* max-width: 1200px; */
   display: flex;
   flex-direction: column;
 }
@@ -86,7 +87,7 @@ header {
   justify-content: space-between;
   position: fixed;
   /* height: 4rem !important; */
-  max-width: 1200px;
+  /* max-width: 1200px; */
   width: 100%;
   z-index: 100;
   background-color: #282c34

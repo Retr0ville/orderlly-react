@@ -14,7 +14,7 @@ const Content = (props) => {
   async function loadItems() {
     try {
       const response = await axios.get(props.endpoint, {
-        baseURL: "http://localhost:5100",
+        baseURL: "http://localhost:5100/api",
         method: "GET",
         mode: "cors",
       });
