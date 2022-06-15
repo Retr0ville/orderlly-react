@@ -7,6 +7,7 @@ import Footer from "../../layout/footer";
 // import { useParams } from 'react-router-dom';
 import axios from "axios";
 
+const apiUrl = (process.env.NODE_ENV === "production") ? "https://gadgetly.herokuapp.com/api" :"http://127.0.0.1:5100/api"
 //use hooks later
 const ItemDetail = (props) => {
   // const [itemId, setItemId] = useState("");
@@ -16,9 +17,9 @@ const ItemDetail = (props) => {
 
   // const { id } = useParams();
   async function fetchData() {
- 
+      
      const response = await axios.get(props.url, {
-      baseURL: "http://127.0.0.1:5100/api",
+      baseURL: apiUrl,
       mode: "cors",
     });
     return response.data;

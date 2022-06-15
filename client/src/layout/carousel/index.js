@@ -1,9 +1,9 @@
 import React from 'react';
 import OwlCarousel from 'react-owl-carousel'
 import FeaturedItem from '../../components/FeaturedItem';
-import FeaturedImage1 from '../../assets/images/4.jpg'
-import FeaturedImage2 from '../../assets/images/5.jpg'
-import FeaturedImage3 from '../../assets/images/3.jpg'
+import FeaturedImage1 from '../../assets/images/rog.jpg'
+import FeaturedImage2 from '../../assets/images/acer.jpg'
+import FeaturedImage3 from '../../assets/images/rtx.jpg'
 
 
 
@@ -51,21 +51,21 @@ const Carousel = (props) => {
       <div className="col-md-12">
         <OwlCarousel id="featured-slider" className="owl-carousel owl-theme" {...options}>
           <FeaturedItem 
-            featuredImage = {FeaturedImage1}
+            featuredImage = {FeaturedImage2}
             description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             title = "Acer Nitro 5 sale off"
             oldCost = "$3000"
             newCost = "$1200"
           />
           <FeaturedItem 
-            featuredImage = {FeaturedImage2}
+            featuredImage = {FeaturedImage3}
             description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-            title = "GTX 3090 sale off"
+            title = "RTX 3090 sale off"
             oldCost = "$8000"
             newCost = "$4999"
           />
           <FeaturedItem 
-            featuredImage = {FeaturedImage3}
+            featuredImage = {FeaturedImage1}
             description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             title = "Asus ROG phone sale off"
             oldCost = "$302,000"

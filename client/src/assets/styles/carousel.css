@@ -10,9 +10,9 @@
   border-start-end-radius: 15px;
   border-end-start-radius: 15px;
   height: fit-content;
-  width: fit-content;
+  min-width: 300px;
   /* max-height: 450px; */
-  max-width: 800px;
+  max-width: 900px;
   border-right: 4px solid #e70000bd;
   /* box-shadow: 5px 5px 20px rgba(201, 201, 201, 0.281); */
   overflow: hidden;

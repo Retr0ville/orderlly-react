@@ -5,6 +5,8 @@ import ItemCard from "../../components/ItemCard";
 import Message from "../../components/Message";
 import Search from "../../components/Search";
 
+const apiUrl = (process.env.NODE_ENV === "production") ? "https://gadgetly.herokuapp.com/api" :"http://127.0.0.1:5100/api"
+
 const Content = (props) => {
   // state init
   const [itemData, setItemData] = useState([]);
@@ -14,7 +16,7 @@ const Content = (props) => {
   async function loadItems() {
     try {
       const response = await axios.get(props.endpoint, {
-        baseURL: "http://localhost:5100/api",
+        baseURL: apiUrl,
         method: "GET",
         mode: "cors",
       });
