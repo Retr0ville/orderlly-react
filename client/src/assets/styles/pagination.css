@@ -1,0 +1,13 @@
+
+
+
+@media screen and (max-width: 420px) {
+  .pagination  {
+    font-size: 0.85rem
+  }
+}
+@media screen and (max-width: 390px) {
+  .page-link  {
+    padding: .3rem .5rem;
+  }
+}

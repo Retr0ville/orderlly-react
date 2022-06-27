@@ -12,12 +12,12 @@ const Footer = (props) => {
               </a>
             </li>
             <li className="nav-item mb-3">
-              <a className="nav-link w-100 text-secondary" href="https://github.com/Retr0ville">
-                <i class="fa fa-info-circle" aria-hidden="true"></i> About me
+              <a className="nav-link w-100 text-secondary" href="https://rtrvl-portfolio.netlify.app/">
+                <i class="fa fa-info-circle" aria-hidden="true"></i> Portfolio
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link w-100 text-secondary" href="https://github.com/Retr0ville">
+              <a className="nav-link w-100 text-secondary" href="mailto:samuelakhaze@gmail.com">
                 <i class="fa fa-address-book" aria-hidden="true"></i> Contact
               </a>
             </li>

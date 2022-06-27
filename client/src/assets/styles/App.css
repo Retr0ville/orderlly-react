@@ -28,23 +28,21 @@
   color: #61dafb;
 }
 
-
 #root {
   width: 100vw;
   background: -webkit-linear-gradient(
-    rgb(33, 255, 166),
+    rgb(33, 100, 166),
     rgb(82, 211, 223),
-    rgb(255, 255, 255)  50%
+    rgb(255, 255, 255) 50%
   );
   background: linear-gradient(
-    rgb(33, 255, 166),
-    rgb(82, 211, 223),
-    rgb(255, 255, 255)  50%
+    rgb(82, 190, 223) 20%,
+    rgba(99, 99, 99, 0.164) 85%
   ) !important;
 }
-  /* height: 100vmax; */
-  /* background-color: #000000cb; */
-  /* background: -webkit-linear-gradient(
+/* height: 100vmax; */
+/* background-color: #000000cb; */
+/* background: -webkit-linear-gradient(
     rgba(192, 192, 207, 0.575),
     rgb(222, 210, 233),
     rgb(186, 187, 194)
@@ -90,7 +88,7 @@ header {
   /* max-width: 1200px; */
   width: 100%;
   z-index: 100;
-  background-color: #282c34
+  background-color: #282c34;
 
   /* background: -webkit-linear-gradient(
     rgba(167, 165, 175, 0.842),
@@ -122,7 +120,7 @@ div.container {
 .orderlly {
   height: max-content;
   border-bottom: 2px double rgb(187, 43, 43);
-  
+
   /* background: -webkit-radial-gradient(rgba(119, 0, 255, 0.685), rgba(255, 153, 0, 0)); */
   /* background: -webkit-linear-gradient(
     rgba(46, 44, 44, 0.315),
@@ -166,7 +164,7 @@ div.container {
 
 a.nav-link {
   color: rgb(247, 247, 247);
-  transition:all 0.1s;
+  transition: all 0.1s;
 }
 
 .footer-nav li.nav-item,
@@ -175,7 +173,7 @@ a.nav-link {
   padding: 2px 1rem;
 }
 .footer-nav {
-  margin-inline:50px ;
+  margin-inline: 50px;
   text-align: right;
 }
 .footer-nav a.nav-link:hover {
@@ -332,14 +330,14 @@ h5.card-title.item-name {
   display: block;
   width: 100%;
   height: auto;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
 
 .middle {
   width: 100%;
   height: 100%;
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 90%;
@@ -388,14 +386,13 @@ div .card-text.item-cost {
 /* img.card-img-top.item{
   /* height: 130px; */
 
-@media screen and (max-width: 455px){
+@media screen and (max-width: 455px) {
   a.nav-link:hover .fa + span.hidden {
     display: none;
   }
 }
 
 @media screen and (max-width: 360px) {
-
   .card-columns {
     column-count: 1;
   }
